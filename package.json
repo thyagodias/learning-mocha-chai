@@ -1,0 +1,37 @@
+{
+  "name": "learning-mocha-chai",
+  "version": "1.0.0",
+  "description": "Este repositório contém a prática do meu estudo de testes em JavaScript com Mocha e Chai",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thyagodias/learning-mocha-chai.git"
+  },
+  "keywords": [
+    "js",
+    "tdd",
+    "library"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thyagodias/learning-mocha-chai/issues"
+  },
+  "homepage": "https://github.com/thyagodias/learning-mocha-chai#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^2.0.1",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1",
+    "husky": "^0.11.9",
+    "mocha": "^3.2.0"
+  }
+}
